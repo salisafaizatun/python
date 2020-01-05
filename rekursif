@@ -1,0 +1,289 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "a= 8\n",
+      "b= 5\n",
+      "13\n",
+      "3\n",
+      "5\n",
+      "16\n",
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "# menghitung nilai tambah dan kurang\n",
+    "a=8;b=5;\n",
+    "def init():\n",
+    "    a=0;b=0;\n",
+    "def tambah():\n",
+    "    return a+b\n",
+    "def kurang():\n",
+    "    return a-b\n",
+    "def cetak(n):\n",
+    "    print(n)\n",
+    "init()  \n",
+    "print(\"a=\",a)\n",
+    "print(\"b=\",b)\n",
+    "print(tambah())\n",
+    "print(kurang())\n",
+    "cetak(5)\n",
+    "cetak(3+tambah())\n",
+    "cetak(kurang())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Celcius = 100\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "celcius = 100.0\n",
+      "reamur = 80.0\n",
+      "fahrenhit = 212.0\n",
+      "kelvin = 373.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#menghitung suhu\n",
+    "def reamur(x):\n",
+    "    return 4/5*c\n",
+    "def fahrenhit(x):\n",
+    "    return 9/5*x+32\n",
+    "def kelvin(x):\n",
+    "    return 273+x\n",
+    "def cetak(s,x):\n",
+    "    print(s,\"=\",x)\n",
+    "\n",
+    "c=float(input(\"Celcius =\"))\n",
+    "cetak(\"celcius\",c)\n",
+    "cetak(\"reamur\",reamur(c))\n",
+    "cetak(\"fahrenhit\",fahrenhit(c))\n",
+    "cetak(\"kelvin\",kelvin(c))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Celcius = 100\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Reamur= 80.0\n",
+      "Fahrenhit= 212.0\n",
+      "Kelvin= 373.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#menghitung suhu\n",
+    "def reamur(x):\n",
+    "    print(\"Reamur=\",4/5*x)\n",
+    "def fahrenhit(x):\n",
+    "    print(\"Fahrenhit=\",9/5*x+32)\n",
+    "def kelvin(x):\n",
+    "    print(\"Kelvin=\",273+x)\n",
+    "c=float(input(\"Celcius =\"))\n",
+    "reamur(c)\n",
+    "fahrenhit(c)\n",
+    "kelvin(c)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Panjang = 15\n",
+      "Lebar = 7\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "keliling =  44.0\n",
+      "luas =  105.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#menghitung keliling dan luas persegi panjang\n",
+    "def Keliling(x,y):\n",
+    "    return 2*(x+y)\n",
+    "def Luas(x,y):\n",
+    "    return x*y\n",
+    "pjg=float(input(\"Panjang =\"))\n",
+    "lbr=float(input(\"Lebar =\"))\n",
+    "print(\"keliling = \",Keliling(pjg,lbr))\n",
+    "print(\"luas = \",Luas(pjg,lbr))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n",
+      "40\n",
+      "24\n",
+      "125\n",
+      "5\n",
+      "5\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "#deret,deret1,fak,pangkat,fibo,dan GCD\n",
+    "def deret(n):\n",
+    "    if n>0:\n",
+    "        return deret(n-1)+n\n",
+    "    else:\n",
+    "        return 0\n",
+    "def deret1(a,b,n):\n",
+    "    if n>0:\n",
+    "        return deret1(a,b,n-1)+a+(n-1)*b\n",
+    "    else:\n",
+    "        return 0\n",
+    "def fak(n):\n",
+    "        if n>0:\n",
+    "            return n*fak(n-1)\n",
+    "        else:\n",
+    "            return 1\n",
+    "def pangkat(a,n):\n",
+    "    if n>0:\n",
+    "        return a*pangkat(a,n-1)\n",
+    "    else:\n",
+    "        return 1\n",
+    "def fibo(n):\n",
+    "    if n>2:\n",
+    "        return fibo(n-1)+fibo(n-2)\n",
+    "    else:\n",
+    "        return 1\n",
+    "def GCD(a,b):\n",
+    "    if b==0:\n",
+    "        return a\n",
+    "    else:\n",
+    "        return GCD(b,a%b)\n",
+    "\n",
+    "print(deret(7))\n",
+    "print(deret1(5,6,9))\n",
+    "print(fak(3))\n",
+    "print(pangkat(5,3))\n",
+    "print(fibo(5))\n",
+    "print(GCD(45,10))\n",
+    "print(GCD(10,45))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "31\n",
+      "32\n",
+      "1440\n",
+      "1024\n"
+     ]
+    }
+   ],
+   "source": [
+    "#deret,deret1,fak, dan pangkat\n",
+    "def deret(n,h):\n",
+    "    if n>0:\n",
+    "        return deret(n-1,h+n)\n",
+    "    else:\n",
+    "        return h\n",
+    "def deret1(a,b,n,h):\n",
+    "    if n>0:\n",
+    "        return deret1(a,b,n-1,h++a+(n-1)*b)\n",
+    "    else:\n",
+    "        return h\n",
+    "def fak(n,h):\n",
+    "    if n>0:\n",
+    "        return fak(n-1,h*n)\n",
+    "    else:\n",
+    "        return h\n",
+    "def pangkat(a,n,h):\n",
+    "    if n>0:\n",
+    "        return pangkat(a,n-1,a*h)\n",
+    "    else:\n",
+    "        return h\n",
+    "\n",
+    "print(deret(7,3))\n",
+    "print(deret1(1,2,5,7))\n",
+    "print(fak(6,2))\n",
+    "print(pangkat(4,5,1))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
