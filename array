@@ -1,0 +1,176 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "A= [3,5,6,8,9]\n",
+    "print (A[3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A3= 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "A=[1,2,3,4,5]\n",
+    "print(\"A3=\",A[3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "dua 2\n",
+      "[1, 2, 3, 4, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "A=[1,2,3,4,5]\n",
+    "print(\"dua\",A[1])\n",
+    "print(A)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Inputkan warna yang ke-0:  putih\n"
+     ]
+    }
+   ],
+   "source": [
+    "###### Membuat list kosong untuk menampung hobi\n",
+    "warna = []\n",
+    "stop = False\n",
+    "i = 0\n",
+    "\n",
+    "# Mengisi hobi\n",
+    "while(not stop):\n",
+    "    warna_baru = input(\"Inputkan warna yang ke-{}: \".format(i))\n",
+    "    warna.append(warna_baru)\n",
+    "\n",
+    "    # Increment i\n",
+    "    i += 1\n",
+    "    \n",
+    "    tanya = input(\"Mau isi lagi? (y/t): \")\n",
+    "    if(tanya == \"t\"): \n",
+    "        stop = True\n",
+    "\n",
+    "\n",
+    "# Cetak Semua Hobi\n",
+    "print (\"=\" * 10 )\n",
+    "print (\"Kamu memiliki {} warna\".format(len(warna)))\n",
+    "for w in warna:\n",
+    "    print (\"- {}\".format(w))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Membuat List\n",
+    "harapan_list = [\n",
+    "    \"pinter\",\n",
+    "    \"sukses\",\n",
+    "    \"makan mie ayam\",\n",
+    "    \"makan seblak\",\n",
+    "]\n",
+    "\n",
+    "# Misalkan kita ingin menghapus \"Belajar Sulap\"\n",
+    "# yang berada di indeks ke-3\n",
+    "del harapan_list[3]\n",
+    "\n",
+    "print (harapan_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# mula-mula kita punya list\n",
+    "a = [\"a\", \"b\", \"c\", \"d\"]\n",
+    "# kemudian kita hapus b\n",
+    "a.remove(\"b\")\n",
+    "\n",
+    "print (a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# mula-mula kita punya list\n",
+    "a = [\"a\", \"b\", \"c\", \"d\"]\n",
+    "# kemudian kita hapus b\n",
+    "a.remove(\"b\")\n",
+    "\n",
+    "print (a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
